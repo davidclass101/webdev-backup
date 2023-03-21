@@ -1,0 +1,78 @@
+<table class="ui striped table">
+  <thead>
+    <tr>
+      <th class="four wide">Flight Number</th>
+      <th class="four wide">Origin</th>
+      <th class="four wide">Destination</th>
+      <th class="four wide">Airline</th>
+      <th class="two wide">Pilot</th>
+      <th class="two wide">Duration</th>
+      <th class="two wide">Departure Date</th>
+      <th class="two wide">Departure Time</th>
+    </tr>
+  </thead>
+<tbody>
+    {{#each flightCollection.flights}}
+    <form class = "ui stacked segment form" action="/flightCollection/{{../flightCollection.id}}/updateFlight/{{id}}" method="POST">
+    <tr class="fields">
+      <td class="field">
+        <span class="ui input">
+         <input type="text" name="flightNumber" autofocus required title = "Please include a valid Flight Number" placeholder="Flight Number" value = "{{flightNumber}}">
+        </span>
+      </td>
+      <td class="field">
+        <span class="ui input">
+          <input type="text" name="origin" required title = "Please include a valid Origin" placeholder="Origin" value = "{{origin}}">
+        </span>
+      </td>
+      <td class="field">
+        <span class="ui input">
+          <input type="text" name="destination" autofocus required title = "Please include a valid Destination" placeholder="Destination" value = "{{destination}}">         
+        </span>
+      </td>
+      <td class="field">
+        <span class="ui input">
+          <input type="text" name="airline" required title = "Please enter a valid Airline" placeholder="Airline" value = "{{airline}}">
+        </span>
+      </td>
+      <td class="field">
+        <span class="ui input">
+          <input type="text" name="pilot" required title = "Please enter a valid Pilot" placeholder="Pilot" value = "{{pilot}}">
+        </span>
+      </td>
+      <td class="field">
+        <span class="ui input">
+          <input type="text" name="duration" required title = "Please enter a valid duration" placeholder="Duration" value = "{{duration}}">
+        </span>
+      </td>
+      <td class="field">
+        <span class="ui input">
+          <input type="text" name="departureDate" required title = "Please enter a valid departure date" placeholder="Departure Date" value = "{{departureDate}}">
+        </span>
+      </td>
+      <td class="field">
+        <span class="ui input">
+          <input type="text" name="departureTime" required title = "Please enter a valid departure time" placeholder="Departure Time" value = "{{departureTime}}">
+        </span>
+      </td>
+      <td class="center aligned">
+        <button class="ui submit icon button"><i class="icon pencil alternate"></i></button>
+      </td>
+      <td class="center aligned">
+        <a href="/flightCollection/{{../flightCollection.id}}/deleteFlight/{{id}}" class="ui icon button delsong">
+          <i class="icon trash"></i>
+        </a>
+      </td>
+    </tr>
+    </form> 
+    {{/each}}
+  </tbody>
+</table>
+
+<p>
+  <span id="rating"> </span>
+</p>
+
+<button class="ui blue button" id="rateit">
+  Rate it! <i class="star icon"></i>
+</button>

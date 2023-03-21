@@ -1,0 +1,34 @@
+{
+  "flightCollectionCollection": [
+    {
+      "id": "4228d854-ff45-496a-aeb8-a0b42d099cd7",
+      "title": "Holidays 2023",
+      "numberOfFlights": "2",
+      "flights": [
+        {
+          "id": "4228d854-ff45-496a-aeb8-a0b42d099cd7",
+      "flightNumber": "FR2152",
+      "origin": "Dublin",
+      "destination": "Alicante",
+      "airline": "Ryanair",
+      "pilot": "Name Surname",
+      "duration": "02:10",
+      "departureDate": "19/03/2023",
+      "departureTime": "12:35"
+        },
+        {
+          "id": "4228d854-ff45-496a-aeb8-a0b42d099cd7",
+      "flightNumber": "FR2189",
+      "origin": "Dublin",
+      "destination": "Paris",
+      "airline": "Ryanair",
+      "pilot": "Name Surname",
+      "duration": "02:25",
+      "departureDate": "21/03/2023",
+      "departureTime": "18:40"
+        }
+      ]
+    },
+    }
+  ]
+}
